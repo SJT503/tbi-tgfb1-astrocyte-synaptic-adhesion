@@ -209,11 +209,11 @@ def clean_fig2():
         rot = tmp.rotate(90, expand=True)
         im.paste(rot.convert("RGB"), (x0, 1890))
 
-    out_tif = os.path.join(OUT_DIR, "Fig 2_cleaned.tif")
-    out_png = os.path.join(OUT_DIR, "Fig 2_cleaned.png")
+    out_tif = os.path.join(OUT_DIR, "Fig 4_cleaned.tif")
+    out_png = os.path.join(OUT_DIR, "Fig 4_cleaned.png")
     im.save(out_tif, dpi=(300, 300), compression="tiff_lzw")
     im.save(out_png, dpi=(300, 300))
-    print("Saved Fig 2_cleaned (.tif & .png)")
+    print("Saved Fig 4_cleaned (.tif & .png) [from raw Fig 2.tif: TGF-βRI astrocytic localization]")
 
 
 def clean_fig3():
@@ -265,11 +265,11 @@ def clean_fig3():
     draw_centered_text(draw, (1300, 6, 1520, 48), "Day 7", f_tp)
     draw_centered_text(draw, (80, 725, 300, 768), "Day 21", f_tp)
 
-    out_tif = os.path.join(OUT_DIR, "Fig 3_cleaned.tif")
-    out_png = os.path.join(OUT_DIR, "Fig 3_cleaned.png")
+    out_tif = os.path.join(OUT_DIR, "Fig 2_cleaned.tif")
+    out_png = os.path.join(OUT_DIR, "Fig 2_cleaned.png")
     im.save(out_tif, dpi=(300, 300), compression="tiff_lzw")
     im.save(out_png, dpi=(300, 300))
-    print("Saved Fig 3_cleaned (.tif & .png)")
+    print("Saved Fig 2_cleaned (.tif & .png) [from raw Fig 3.tif: Exogenous TGF-β1 dose-response]")
 
 
 def clean_fig4():
@@ -278,11 +278,11 @@ def clean_fig4():
     for y0, y1 in [(640, 810), (1065, 1235), (1490, 1660)]:
         draw_rotated_90_text(im, (1512, y0, 1548, y1), "Entries (n)", f_y4c)
 
-    out_tif = os.path.join(OUT_DIR, "Fig 4_cleaned.tif")
-    out_png = os.path.join(OUT_DIR, "Fig 4_cleaned.png")
+    out_tif = os.path.join(OUT_DIR, "Fig 5_cleaned.tif")
+    out_png = os.path.join(OUT_DIR, "Fig 5_cleaned.png")
     im.save(out_tif, dpi=(300, 300), compression="tiff_lzw")
     im.save(out_png, dpi=(300, 300))
-    print("Saved Fig 4_cleaned (.tif & .png)")
+    print("Saved Fig 5_cleaned (.tif & .png) [from raw Fig 4.tif: CA3 astrocyte-specific Tgfbr1 KO]")
 
 
 def clean_fig5():
@@ -340,11 +340,11 @@ def clean_fig5():
         anchor_x, anchor_y = int(xs[top_idx]), int(ys[top_idx])
         im.paste(rot, (tick_x - anchor_x + 4, 2453 - anchor_y), rot)
 
-    out_tif = os.path.join(OUT_DIR, "Fig 5_cleaned.tif")
-    out_png = os.path.join(OUT_DIR, "Fig 5_cleaned.png")
+    out_tif = os.path.join(OUT_DIR, "Fig 3_cleaned.tif")
+    out_png = os.path.join(OUT_DIR, "Fig 3_cleaned.png")
     im.save(out_tif, dpi=(300, 300), compression="tiff_lzw")
     im.save(out_png, dpi=(300, 300))
-    print("Saved Fig 5_cleaned (.tif & .png)")
+    print("Saved Fig 3_cleaned (.tif & .png) [from raw Fig 5.tif: Anti-TGF-β1 NAb & CA1 LTP]")
 
 
 def clean_fig6():

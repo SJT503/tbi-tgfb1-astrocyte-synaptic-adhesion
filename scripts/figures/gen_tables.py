@@ -65,7 +65,7 @@ def make_table(fname, title, caption, headers, rows, widths=None):
     print("saved & synced:", fp)
 
 
-# ========== Table 1 — Experimental design & multi-cohort architecture (Main Table 1 for NC) ==========
+# ========== Table 1 — Experimental design & multi-cohort architecture (Main Table 1 for JNI) ==========
 t1_head = [
     "Cohort / Experiment", "Model / System", "Groups", "Sample size",
     "Intervention / Design", "Time points", "Key readouts (Figures)", "Data / Source"
@@ -78,7 +78,7 @@ t1_rows = [
         "n = 3–6 mice/group",
         "Natural post-injury time-course (3.0 m/s, 2.0 mm depth, 500 ms dwell)",
         "0.5, 1, 3, 7, 14, 30 dpi",
-        "Cortical & hippocampal TGF-β1 IF; TGF-β1 + Iba1/GFAP double IF (Fig. 1A–D); TGF-βRI + NeuN/Iba1/GFAP double IF & WB (Fig. 2A–E)",
+        "Cortical & hippocampal TGF-β1 IF; TGF-β1 + Iba1/GFAP double IF (Fig. 1A–D); TGF-βRI + NeuN/Iba1/GFAP double IF & WB (Fig. 4A–E)",
         "In-house wet-lab (SUMC 2021-134)"
     ],
     [
@@ -88,27 +88,27 @@ t1_rows = [
         "n = 6 (NSS); n = 3–6 (IF/behavior)",
         "ICV stereotaxic injection (AP +1.5, ML −1.1, DV −2.0 mm) at injury",
         "NSS −1 to 30 dpi; Y-maze 7, 21 dpi; NOR 30 dpi; IF 30 dpi",
-        "NSS; Y-maze; NOR; cortical & hippocampal CA3/DG neuronal loss (NeuN) & gliosis (Iba1/GFAP) (Fig. 3A–G)",
+        "NSS; Y-maze; NOR; cortical & hippocampal CA3/DG neuronal loss (NeuN) & gliosis (Iba1/GFAP) (Fig. 2A–G)",
         "In-house wet-lab (SUMC 2021-134)"
     ],
     [
-        "3. Astrocyte-specific Tgfbr1 knockout in hippocampal CA3",
-        "Mouse CCI (C57BL/6J)",
-        "Sham; CCI; CCI+scr; CCI+TGF-βR1 KO",
-        "n = 8 (behavior); n = 4–6 (IF)",
-        "Hippocampal CA3 stereotaxic AAV-PHP.eB-GFAP-SaCas9-sgTgfbr1 (3 µL, 1×10^{12} vg/mL; AP +3.0, ML −2.8, DV −3.0 mm) 3 wk pre-CCI",
-        "Y-maze & NOR at 7, 21, 28 dpi; IF at 7 & 28 dpi",
-        "HA-tag & GFAP+TGF-βRI knockout verification; Y-maze alternation & entries; NOR trajectory heatmaps & preference index (Fig. 4A–E)",
-        "In-house wet-lab (SUMC 2021-134)"
-    ],
-    [
-        "4. Anti-TGF-β1 neutralizing mAb (immediate & delayed LTP cohorts)",
+        "3. Anti-TGF-β1 neutralizing mAb (immediate & delayed LTP cohorts)",
         "Mouse CCI (C57BL/6J)",
         "Sham; CCI+Saline/Vehicle; CCI+anti-TGF-β1 mAb (20, 30, 60 pg/mg)",
         "n = 6 (behavior & Schaffer–CA1 LTP)",
         "ICV anti-TGF-β1 mAb (BioLegend #521707) immediately or at 3 dpi; Schaffer–CA1 fEPSP recorded via MultiClamp 700B / Digidata 1550B / pClamp 10.7",
         "Y-maze 1, 7, 28/30 dpi; NOR 28 dpi; hippocampal LTP at 7 dpi",
-        "Y-maze & NOR rescue; gliosis suppression; Schaffer collateral–CA1 fEPSP LTP restoration (Fig. 5A–E)",
+        "Y-maze & NOR rescue; gliosis suppression; Schaffer collateral–CA1 fEPSP LTP restoration (Fig. 3A–E)",
+        "In-house wet-lab (SUMC 2021-134)"
+    ],
+    [
+        "4. Astrocyte-specific Tgfbr1 knockout in hippocampal CA3",
+        "Mouse CCI (C57BL/6J)",
+        "Sham; CCI; CCI+scr; CCI+TGF-βR1 KO",
+        "n = 8 (behavior); n = 4–6 (IF)",
+        "Hippocampal CA3 stereotaxic AAV-PHP.eB-GFAP-SaCas9-sgTgfbr1 (3 µL, 1×10^{12} vg/mL; AP +3.0, ML −2.8, DV −3.0 mm) 3 wk pre-CCI",
+        "Y-maze & NOR at 7, 21, 28 dpi; IF at 7 & 28 dpi",
+        "HA-tag & GFAP+TGF-βRI knockout verification; Y-maze alternation & entries; NOR trajectory heatmaps & preference index (Fig. 5A–E)",
         "In-house wet-lab (SUMC 2021-134)"
     ],
     [
@@ -116,7 +116,7 @@ t1_rows = [
         "Mouse CCI, ipsilateral hippocampus",
         "Sham; CCI+scr; CCI+TGF-βR1 KO",
         "35,047 QC-passed nuclei (8 mice pooled/group)",
-        "Same as Cohort 3 (AAV-GFAP-SaCas9-sgTgfbr1), harvested at 30 dpi; Seurat (v4.1.3) CCA integration & SingleR annotation",
+        "Same as Cohort 4 (AAV-GFAP-SaCas9-sgTgfbr1), harvested at 30 dpi; Seurat (v4.1.3) CCA integration & SingleR annotation",
         "30 dpi",
         "7-cell-type atlas & SingleR validation; 774 pure astrocytes (Homeo-A, Homeo-B 14× expansion, Reactive); Monocle3; pySCENIC (17/20 regulons rescued); CellOracle in silico Tgfbr1 KO (Fig. 6A–G); Astrocyte→DG CellChat rescue (Fig. 7C–D); DG_C0–C3 granule neuron state rescue (Fig. 8D)",
         "GEO: GSE333879 (GSM9776429–31; SUMC 2021-134)"
@@ -128,7 +128,7 @@ t1_rows = [
         "n = 22 mice (Hippo vs Cortex); n = 17 human snRNA donors; n = 94 human bulk hippocampal samples",
         "Donor/sample-level pseudobulk DESeq2, CellChat v2, MEF2C coupling & 16-gene adhesion scoring",
         "6 h to 28 dpi (mouse); acute & chronic (human)",
-        "Human TGFB1 surge (Fig. 1E); MEF2C–adhesion coupling (Fig. 6H); mouse & human CellChat collapse & hippocampal CA3/DG selective vulnerability (Fig. 7A–B, E–F); mouse time-course anoikis & human neuronal apoptosis (Fig. 8C, E; SFig. S1–S4)",
+        "Human TGFB1 surge (Fig. 1E); MEF2C–adhesion coupling (Fig. 6H); mouse & human CellChat collapse & hippocampal CA3/DG selective vulnerability (Fig. 7A–B, E–F); mouse time-course anoikis & human neuronal apoptosis (Fig. 8C, E; SFig. S1–S5)",
         "GEO: GSE209552, GSE180862, GSE101901, GSE271769, GSE277487, GSE290150, GSE226207; Allen ADTBI"
     ],
     [
