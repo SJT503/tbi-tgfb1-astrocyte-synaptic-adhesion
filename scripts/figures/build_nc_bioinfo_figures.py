@@ -716,12 +716,12 @@ def build_figure_6():
     # Highlight and pin top upregulated synaptogenic/homeostatic targets & downregulated reactive targets
     up_pins = [
         ("Gpc5 (#1)",   0.074, 340),
-        ("Gpc6 (#7)",   0.064, 340),
-        ("Ntm (#8)",    0.054, 340),
-        ("Slc1a2 (#9)", 0.044, 340),
-        ("Lsamp (#10)", 0.034, 340),
-        ("Nrxn1 (#12)", 0.024, 340),
-        ("Apoe (#23)",  0.014, 340),
+        ("Gpc6 (#8)",   0.064, 340),
+        ("Ntm (#9)",    0.054, 340),
+        ("Slc1a2 (#10)", 0.044, 340),
+        ("Lsamp (#11)", 0.034, 340),
+        ("Nrxn1 (#13)", 0.024, 340),
+        ("Apoe (#24)",  0.014, 340),
     ]
     for lbl_p, y_txt, x_txt in up_pins:
         g_sym = lbl_p.split(" ")[0]
@@ -739,7 +739,7 @@ def build_figure_6():
     dn_pins = [
         ("Gfap", -0.011, 1520),
         ("C4b",  -0.021, 1520),
-        ("Id3 (#12 ↓)", -0.031, 1520),
+        ("Id3 (#11)", -0.031, 1520),
     ]
     for lbl_p, y_txt, x_txt in dn_pins:
         g_sym = lbl_p.split(" ")[0]
