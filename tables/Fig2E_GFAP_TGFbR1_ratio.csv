@@ -1,0 +1,5 @@
+Region,Group,Mean,SD,Rep1,Rep2,Rep3,Sig_vs_Sham
+Cortex,Sham,0.99,0.195,1.19,0.98,0.8,
+Cortex,CCI,1.923,0.36,2.28,1.93,1.56,*
+Hippocampus,Sham,0.957,0.111,1.06,0.97,0.84,
+Hippocampus,CCI,1.863,0.349,2.24,1.8,1.55,*

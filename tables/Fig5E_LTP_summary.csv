@@ -1,0 +1,5 @@
+Group,Mean_fEPSP_Slope_Pct,SEM,Sig
+Sham,154.5,2.5,
+CCI,132.0,3.0,** vs Sham
+CCI+NAb (20 pg/mg),142.2,7.8,* vs CCI
+CCI+NAb (60 pg/mg),144.6,4.2,* vs CCI

@@ -1,0 +1,16 @@
+"sample","timepoint","treatment_group","MEF2C","n_cell"
+"3dpi_CTRL_rep1","3dpi","control",3.448,793
+"3dpi_CTRL_rep2","3dpi","control",3.787,845
+"3dpi_INH_rep1","3dpi","inh",3.718,999
+"3dpi_INH_rep2","3dpi","inh",3.711,1359
+"5dpi_CTRL_rep1","5dpi","control",3.397,807
+"5dpi_CTRL_rep2","5dpi","control",4.205,1696
+"5dpi_CTRL_rep3","5dpi","control",4.94,1972
+"5dpi_INH_rep1","5dpi","inh",4.296,2221
+"5dpi_INH_rep2","5dpi","inh",4.245,2320
+"5dpi_INH_rep3","5dpi","inh",4.801,2060
+"Intact_rep1","intact","control",4.345,1925
+"Intact_rep2","intact","control",3.98,1718
+"Intact_rep3","intact","control",3.858,2351
+"Intact_rep4","intact","control",3.987,2750
+"Intact_rep5","intact","control",4.964,2903

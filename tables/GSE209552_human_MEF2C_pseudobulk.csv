@@ -1,0 +1,17 @@
+"sample","timepoint","treatment_group","MEF2C","n_cell"
+"MJ_TBI_nr1_LT","acute","tbi",0,28
+"MJ_TBI_nr10_LT","acute","tbi",0,26
+"MJ_TBI_nr11_LFP","acute","tbi",4.187,152
+"MJ_TBI_nr16_RT","acute","tbi",0,9
+"MJ_TBI_nr2_LF","acute","tbi",3.431,88
+"MJ_TBI_nr20_RF","acute","tbi",4.27,63
+"MJ_TBI_nr21_RF","acute","tbi",4.377,115
+"MJ_TBI_nr3_RF","acute","tbi",5.039,87
+"MJ_TBI_nr6_RT","acute","tbi",3.661,67
+"MJ_TBI_nr7_LT","acute","tbi",5.001,47
+"MJ_TBI_nr8_RT","acute","tbi",0,19
+"TBI_HuBrainCTL_Nuclei501F_F","acute","control",4.739,230
+"TBI_HuBrainCTL_Nuclei501T_T","acute","control",4.809,109
+"TBI_HuBrainCTL_Nuclei502T_T","acute","control",5.228,257
+"TBI_HuBrainCTL_Nuclei529F_F","acute","control",5.085,516
+"TBI_HuBrainCTL_Nuclei529T_T","acute","control",5.122,406

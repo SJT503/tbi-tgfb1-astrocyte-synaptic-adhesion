@@ -1,0 +1,6 @@
+Gene,Pathway_Arm,Pct_Change_TBI_vs_CTL,P_Value,Sig
+BAX,Apoptosis,273.7,3.42e-11,***
+BCL2,Apoptosis,-11.5,4.11e-06,***
+CASP8,Apoptosis,66.0,0.00116,**
+RIPK1,Necroptosis,42.0,2.33e-06,***
+MLKL,Necroptosis,283.9,0.000197,***
